@@ -1,0 +1,12 @@
+[
+    {
+        "img" : "img/banho.jpg",
+        "nome": "Banho",
+        "descricao": "Tanto cães e gatos são utilizam apnas produtos veterinários. Tomam banho de água aquecida, cães e gatos de pelo longo passam por uma escovação antes do banho. A secagem é feita em por aparelhos que não agridem a pele animal Banho contra parasitas.Banho realizado com produtos que retiram as pulgas e carrapatos. "
+    },
+    {
+        "img": "img/tosa.jpg",
+        "nome": "Tosa",
+        "descricao": "A tosa é feita de acordo com o pedido do cliente e a pelagem do animal. Tosa higiênica, na qual são aparados os pelos nas genitálias e do rosto."
+    }
+]

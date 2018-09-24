@@ -1,0 +1,88 @@
+html, body{
+    height: 100%;
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1em;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+#nav_horizontal {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Tipo de fonte*/
+    font-size: 14px;
+    font-weight: bolder;
+    /* Tamanho da fonte */
+    box-align: center;
+}
+
+#nav_horizontal ul {
+    list-style: none;
+    /* Retirar estilo da lista (topicos) */
+    margin: 0;
+    /* Sem margem */
+    padding: 0;
+    /* Sem espaçamento interno*/
+        /* Cor de fundo do menu */
+}
+
+#nav_horizontal ul li {
+    display: inline-block;
+    /* Lista ficar horizontal */
+}
+
+#nav_horizontal ul li a {
+    display: block;
+    /* Formato de botão no link */
+    color: #000;;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinhamento centralizado do botão */
+    padding: 15px 20px;
+    /* Espaçamentno interno do botão */
+    text-decoration: none;
+    /* Sem o sublinhado do link */
+}
+
+/* Quando o mouse passar sobre o botão */
+
+#nav_horizontal ul li a:hover {
+    background-color: #ffc04c;
+    /* cor de fundo do botão */
+}
+
+/* Quando clicar sobre o botão */
+
+#nav_horizontal ul li a:active {
+    background-color: #EEE;
+    /* cor de fundo do botão */
+    color: #333;
+    /* cor do texto */
+}
+
+footer{
+    background-color: #ffc04c;
+}
+
+.bgNav{
+    background-color: #FFA500;
+}
+.bgNav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+.bgNav .col-md-8 ul{
+    float: right;
+}

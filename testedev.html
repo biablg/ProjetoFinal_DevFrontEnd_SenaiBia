@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <title>Line Up</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html" class="logo">NOW É CERRADO!</a>
+                </div>
+                <div class="col-md-4 mt-5 mb-2">
+                    <img height="100" src="img/logo1.png">
+                </div>
+                <div class="col-md-5">
+                    <nav id="nav_horizontal">
+                        <a href="home.html">Inicio</a>
+                        <a href="evento.html">O Evento</a>
+                        <a href="atracoes.html">Line Up</a>
+                        <a href="contato.html">Contato</a>
+                        <a href="sobre.html">Sobre</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Atrações</h1>
+        
+        
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="row mt-2 mb-2">
+                <strong>
+                    <p>&copy; Todos os direitos reservados a Alexandro
+                    </p>
+                </strong>
+                <strong>
+                    <address>
+                        alexandro@gmail.com
+                    </address>
+                </strong>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function () {
+        //Ajax consultando texto
+        $.ajax({
+            url: 'petshop.txt',
+            success: function (response) {
+                //console.log(response);
+                alert('encontrou!!!!');
+                //Inserindo o conteudo do response após a tag <h1>
+                $('h1').after('<h2>' + response + '</h2>');
+            },
+            error: function () {
+                alert('Ocorreu um erro!!!');
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

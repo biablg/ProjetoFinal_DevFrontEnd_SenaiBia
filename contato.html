@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pet Shop Meu Amigo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <header class="bgNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-2 mb-2">
+                    <img height="100" src="img/logo.png">
+                    <strong>Mon Ami - Petshop </strong>
+                </div>
+                <div class="col-md-8">
+                    <nav id="nav_horizontal">
+                        <ul>
+                            <li>
+                                <a href="index.html">Início</a>
+                            </li>
+                            <li>
+                                <a href="petshop.html">Pet Shop</a>
+                            </li>
+                            <li>
+                                <a href="servicos.html">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="fotos.html">Fotos</a>
+                            </li>
+                            <li>
+                                <a href="loja.html">Instalações</a>
+                            </li>
+                            <li>
+                                <a href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main" class="container text-center mt-3 mb-3">
+        <form class="form-group" method="POST" id="contato">
+            <!--<form action="cadastro.php" method="post" enctype="multipart/form-data">-->
+            <h1>Fale Conosco</h1>
+            <br>
+            <fieldset>
+                <input class="form-control" type="text" placeholder="Nome" minlength="7" maxlength="60" id="nome" name="nome" required/>
+
+                <span id="erroNome"></span>
+                <input class="form-control mt-2" type="text" placeholder="Email" id="email" name="email" required />
+
+                <span id="erroEmail"></span>
+
+                <select class="form-control mt-2" name="assunto" id="assunto">
+                    <option selected value="">Selecione</option>
+                    <option value="ouvidoria">Ouvidoria</option>
+                    <option value="sugestão">Sugestões</option>
+                    <option value="elogio">Elogios</option>
+                </select>
+
+                <span id="erroAssunto"></span>
+                <textarea class="form-control mt-2" cols="50" rows="10" name="msg" id="msg" placeholder="Comentário" required></textarea>
+
+                <span id="erroMsg"></span>
+                <input class="btn btn-success mt-2" type="submit" value="Cadastrar" />
+                <input class="btn btn-danger mt-2" type="reset" value="Limpar" />
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mt-4 mb-4">
+
+                        <strong class="mt-2 mb-5">Loja - Faça-nos uma visita</strong>
+                        <br> Rua Carmelita de Oliveira Marques, nº 74.
+                        <br> Bairro Forte. Cidade Beira Mar/BA.
+                        <br> Cep: 95.590.000. Brasil.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <address>
+                        <strong>
+                            <a href="mailto:gabia@gmail.com"> &copy;Copyright 2018 - Brasília/DF </a>
+                        </strong>
+                    </address>
+                    <h5 class="text-center mb-4">
+                        <strong>Todos os direitos reservados </strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+
+</html>

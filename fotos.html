@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fotos / Mon Ami</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <style>
+    </style>
+</head>
+
+<body onload="resFoto(0)">
+    <header class="bgNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-2 mb-2">
+                    <img height="100" src="img/logo.png">
+                    <strong>Mon Ami - Petshop </strong>
+                </div>
+                <div class="col-md-8">
+                    <nav id="nav_horizontal">
+                        <ul>
+                            <li>
+                                <a href="index.html">Início</a>
+                            </li>
+                            <li>
+                                <a href="petshop.html">Pet Shop</a>
+                            </li>
+                            <li>
+                                <a href="servicos.html">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="fotos.html">Instalações</a>
+                            </li>
+                            <li>
+                                <a href="loja.html">Instalações</a>
+                            </li>
+                            <li>
+                                <a href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <h1 class="mt-5 mb-4">Galeria de Fotos</h1>
+        <div class="container marketing">
+            <!--Galeria Thumbnails-->
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Primeira Linha Galeria Thumbnail -->
+                    <div class="row">
+                        <div class="col-lg3">
+                            <button onclick="resFoto(   0)" name="ft" value="0">
+                                <img src="img/galeria2-tn.jpg" class="img-thumbnail img-fluid rounded">
+                            </button>
+                        </div>
+                        <div class="col-lg3">
+                            <button onclick="resFoto(1)" name="ft" value="1">
+                                <img src="img/galeria1-tn.jpg" class="img-thumbnail img-fluid rounded">
+                            </button>
+                        </div>
+                    </div>
+                    <!--Segunta Linha Galeria Thumbnail -->
+                    <div class="row">
+                        <div class="col-lg3">
+                            <button onclick="resFoto(2)" name="ft" value="2">
+                                <img src="img/galeria3-tn.jpg" class="img-thumbnail img-fluid rounded">
+                            </button>
+                        </div>
+                        <div class="col-lg3 ">
+                            <button onclick="resFoto(3)" name="ft" value="3">
+                                <img src="img/galeria6-tn.png" class="img-thumbnail img-fluid rounded">
+                            </button>
+
+                        </div>
+                    </div>
+                    <!--Terceira Linha Galeria Thumbnail -->
+                    <div class="row">
+                        <div class="col-lg3">
+                            <button onclick="resFoto(4)" name="ft" value="4">
+                                <img src="img/galeria7-tn.png" class="img-thumbnail img-fluid rounded">
+                            </button>
+                        </div>
+                        <div class="col-lg3 ">
+                            <button onclick="resFoto(5)" name="ft" value="5">
+                                <img src="img/galeria9-tn.jpg" class="img-thumbnail img-fluid rounded">
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- mostra as fotos das thumbnails -->
+                <div class="container marketing col-md-6 mb-4">
+                    <div id="listFoto" class="row">
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mt-4">
+                        <strong>Loja - Faça-nos uma visita</strong>
+                        <br> Rua Carmelita de Oliveira Marques, nº 74.
+                        <br> Bairro Forte. Cidade Beira Mar/BA.
+                        <br> Cep: 95.590.000. Brasil.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <address>
+                        <strong>
+                            <a href="mailto:gabia@gmail.com"> &copy;Copyright 2018 - Brasília/DF </a>
+                        </strong>
+                    </address>
+                    <h5 class="text-center mt-4 mb-4">
+                        <strong>Todos os direitos reservados </strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+    .galleryfull{
+        height: 175px;
+        margin: 15px 0;
+    }
+    #listFoto img{
+        margin-top: 15px;
+        height: 380px;
+    }
+    .galleryfull img{
+        cursor: pointer;
+        height: 175px;
+    }
+    </style>
+    <script>
+        function resFoto(indice) {
+            switch (indice) {
+                case 0:
+                    $('#listFoto').html('<img class="rounded" src="img/galeria2.jpg">');
+                    break;
+                case 1:
+                    $('#listFoto').html('<img class="rounded" src="img/galeria1.png" >');
+                    break;
+                case 2:
+                    $('#listFoto').html('<img class="rounded" src="img/galeria3.png" >');
+                    break;
+                case 3:
+                    $('#listFoto').html('<img class="rounded" src="img/galeria6.png" >');
+                    break;
+                case 4:
+                    $('#listFoto').html('<img class="rounded" src="img/galeria7.png" >');
+                    break;
+                case 5:
+                    $('#listFoto').html('<img class="rounded" src="img/galeria9.png" >');
+                    break;
+            }
+        };
+    </script>
+</body>
+
+</html>

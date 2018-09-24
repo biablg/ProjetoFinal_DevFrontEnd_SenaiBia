@@ -1,0 +1,12 @@
+[
+    {
+        "img" : "img/foto1.jpg",
+        "nome": "Banho",
+        "descricao": "Tanto cães e gatos "
+    },
+    {
+        "nome": "img/foto2.jpg",
+        "img": "img/tosa.jpg",
+        "descricao": "A tosa é feita de acordo ."
+    }
+]
